@@ -32,11 +32,8 @@ class Car(Sprite):
 
 def update():
     keys = key.get_pressed()
-    if keys[K_d] and player.rect.x <= 500:
-        player.rect.x += 5
-    if keys[K_a] and player.rect.x >= 80:
-        player.rect.x -= 5
-
+    if keys[K_d] and player.rect.x <= 500: player.rect.x += 5
+    if keys[K_a] and player.rect.x >= 80: player.rect.x -= 5
 
 player = Sprite('player_car.png', 200, 600, 55, 100)
 player_shadow = Sprite('player_shadow.png', 196, 600, 60, 105)
